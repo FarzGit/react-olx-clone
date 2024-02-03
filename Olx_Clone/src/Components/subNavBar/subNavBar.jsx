@@ -4,14 +4,14 @@ function SubNavBar(){
 
 
     return(
-        <div className="mainSubNavBar bg- h-[42px] flex border-t-2 border-b-2 mt-1 border-gray-200">
+        <div className="mainSubNavBar bg- h-[42px] flex border-t-2 border-b-2 max-md:hidden mt-1   border-gray-200">
 
             <div className="flex items-center pl-[25px]">
                 <h3 className="font-bold text-sm">ALL CATEGORIES</h3>
                 <h4 className="pl-3"><IoIosArrowDown size={30} /></h4>
             </div>
 
-            <div className="flex items-center pl-[30px] ">
+            <div className="flex items-center pl-[30px]  ">
                 <ul className="flex space-x-3">
                     <li className="text-xs hover:text-blue-500 cursor-pointer">Cars</li>
                     <li className="text-xs hover:text-blue-500 cursor-pointer">Motorcycles</li>
