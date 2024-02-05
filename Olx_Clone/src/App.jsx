@@ -7,40 +7,32 @@ import Login from "./Components/login/login"
 import SignUp from "./Components/login/signUp"
 import Products from "./Components/products/products"
 import SubNavBar from "./Components/subNavBar/subNavBar"
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Layout from "./layout"
+
+
 
 
 function App() {
- 
+
 
   return (
     <>
-    <Navbar/>
-    <SubNavBar/>
-    {/* <div className="w-full flex justify-center">
-    <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:w-[75%] ">
-      <Products/>
-      <Products/>
-      <Products/>
-      <Products/>
-      <Products/>
-      <Products/>
-      <Products/>
-      <Products/>
-      <Products/>
-      <Products/>
-    </div>
-    </div> */}
+      {/* <AddProduct/> */}
 
-    {/* <SignUp/> */}
-    {/* <Login/> */}
-    {/* <AddProduct/> */}
+      {/* <ProductDtails/>
 
-    <ProductDtails/>
+    <Footer/> */}
 
-    <Footer/>
+      <Router>
+        <Routes>
+          <Route path="/signUp" element={<SignUp />} />
+          <Route path="/login" element={<Login/>} />
+          <Route path="/" element={<Layout/>} />
+        </Routes>
+      </Router>
 
 
-    
 
     </>
   )
