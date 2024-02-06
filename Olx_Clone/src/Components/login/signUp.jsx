@@ -1,11 +1,9 @@
 import { useState, } from "react";
-import { FaArrowLeft } from "react-icons/fa";
-// import { FirebaseContext } from "../../firebase/context";
 import { auth } from '../../firebase/config'
 import { db } from '../../firebase/config'
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { collection, addDoc } from 'firebase/firestore'
-import {useNavigate} from 'react-router-dom'
+import {useNavigate ,Link} from 'react-router-dom'
 
 function SignUp() {
     const Navigate = useNavigate()
@@ -37,12 +35,10 @@ function SignUp() {
     }
 
     return (
-        <div className="flex items-center justify-center h-svh bg-slate-200 relative">
+        <div className="flex items-center justify-center h-svh bg-slate-200 ">
 
-            <div className="h-[85%] w-[40%] bg-slate-50 flex flex-col items-center rounded-lg justify-center relative " >
-                <div className="absolute top-0 left-0 mt-2 mr-2 pl-2">
-                    <button><FaArrowLeft /></button>
-                </div>
+            <div className="h-[85%] w-[40%] bg-slate-50 flex flex-col items-center rounded-lg justify-center  " >
+               
                 <img className="w-[70px]" src="olxLogo.png" alt="" />
                 <h1 className="mt-3 font-medium">Create An Account</h1>
                 <form onSubmit={handleSubmit} className="flex flex-col w-[70%] mt-7">
@@ -52,7 +48,7 @@ function SignUp() {
                     <button className=" text-white font-bold  w-[100%] rounded-lg mt-6 h-[34px]" style={{ backgroundColor: "#003034" }}>Create</button><br />
                 </form>
 
-                <a className="text-sm underline cursor-pointer hover:text-blue-600">Login With Account</a>
+                <Link to="/Login" className="text-sm underline cursor-pointer hover:text-blue-600">Login With Account</Link>
             </div>
 
         </div>

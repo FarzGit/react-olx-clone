@@ -20,17 +20,17 @@ function App() {
 
   return (
     <>
-      {/* <AddProduct/> */}
+     
 
-      {/* <ProductDtails/>
-
-    <Footer/> */}
+    {/* <Footer/>  */}
 
       <Router>
         <Routes>
           <Route path="/signUp" element={<SignUp />} />
           <Route path="/login" element={<Login/>} />
           <Route path="/" element={<Layout/>} />
+          <Route path="/addProduct" element={<AddProduct/>}/>
+          <Route path="/productDetails" element={<ProductDtails/>}/>
         </Routes>
       </Router>
 

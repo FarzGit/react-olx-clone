@@ -1,8 +1,8 @@
-// import { FaArrowLeft } from "react-icons/fa";
 import { useState } from 'react'
 import {auth,} from '../../firebase/config'
 import {signInWithEmailAndPassword} from 'firebase/auth'
 import {useNavigate} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 
@@ -32,9 +32,7 @@ function Login() {
         <div className="flex items-center justify-center h-svh bg-slate-200 relative">
 
             <div className="h-[85%] w-[40%] bg-slate-50 flex flex-col items-center rounded-lg justify-center relative " >
-                {/* <div className="absolute top-0 left-0 mt-2 mr-2 pl-2">
-                    <button><FaArrowLeft /></button>
-                </div> */}
+             
                 <img className="w-[70px]" src="olxLogo.png" alt="" />
                 <h1 className="mt-3 font-medium">Enter Email and Password</h1>
                 <form onSubmit={handleLogin} className="flex flex-col w-[70%] mt-7">
@@ -43,7 +41,7 @@ function Login() {
                     <button  className=" text-white font-bold  w-[100%] rounded-lg mt-6 h-[34px]" style={{ backgroundColor: "#003034" }}>Login</button>
                 </form>
                 <br />
-                <a className="text-sm underline cursor-pointer hover:text-blue-600">Create Account</a>
+                <Link to="/signUp" className="text-sm underline cursor-pointer hover:text-blue-600">Create Account</Link>
             </div>
 
         </div>

@@ -78,11 +78,11 @@ function Navbar() {
                     </div>
 
                     <div className="flex items-center ">
-                        <button className="sellButton bg-white rounded-3xl w-[95px] h-[43px] flex items-center p-4">
+                        <Link to="/addProduct" className="sellButton bg-white rounded-3xl w-[95px] h-[43px] flex items-center p-4">
                             <FaPlus />
 
                             SELL
-                        </button>
+                        </Link>
                     </div>
 
                 </div>

@@ -13,16 +13,7 @@ function Layout(){
        <SubNavBar/> 
       <div className="w-full flex justify-center">
     <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:w-[75%] ">
-      <Products/>
-      <Products/>
-      <Products/>
-      <Products/>
-      <Products/>
-      <Products/>
-      <Products/>
-      <Products/>
-      <Products/>
-      <Products/>
+      <Products/> 
     </div>
     </div> 
         
