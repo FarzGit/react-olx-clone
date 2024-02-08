@@ -1,7 +1,6 @@
 
 import { IoShareSocialOutline } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa";
-import { FaRegUserCircle } from "react-icons/fa";
 import '../ProductDetails/productDetails.css'
 import Navbar from "../Navbar/Navbar";
 import SubNavBar from "../subNavBar/subNavBar";
